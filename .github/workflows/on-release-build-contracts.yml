@@ -1,0 +1,20 @@
+name: On release, build contracts
+
+on:
+    release:
+        types: [published]
+
+permissions:
+    contents: write
+
+jobs:
+    build:
+        uses: HatomProtocol/hatom-sc-actions/.github/workflows/reproducible-build.yml@main
+        with:
+            image_tag: v6.1.1
+            attach_to_existing_release: true
+            package_whole_project_src: true
+        secrets:
+            deploy-keys: |
+                ${{ secrets.ADMIN_MODULE_SSH_DEPLOY_PRIVATE_KEY }}
+                ${{ secrets.USH_MINTER_SSH_DEPLOY_PRIVATE_KEY }}

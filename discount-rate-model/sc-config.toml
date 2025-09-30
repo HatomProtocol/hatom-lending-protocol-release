@@ -1,0 +1,2 @@
+[[proxy]]
+path = "src/discount_rate_model_proxy.rs"

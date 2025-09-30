@@ -1,0 +1,2 @@
+[[proxy]]
+path = "src/interest_rate_model_proxy.rs"

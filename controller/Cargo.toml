@@ -1,0 +1,26 @@
+[package]
+name = "controller"
+version = "0.0.0"
+authors = ["Hatom"]
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/contract.rs"
+
+[dependencies.oracle]
+path = "../oracle"
+
+[dependencies]
+admin = { git = "ssh://git@github.com/HatomProtocol/hatom-admin-module", branch = "develop" }
+
+[dependencies.multiversx-sc]
+version = "0.53.0"
+
+[dev-dependencies]
+num-bigint = "0.4.2"
+num-traits = "0.2"
+hex = "0.4"
+
+[dev-dependencies.multiversx-sc-scenario]
+version = "0.53.0"

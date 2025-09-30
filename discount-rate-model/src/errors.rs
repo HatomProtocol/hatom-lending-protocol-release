@@ -1,0 +1,9 @@
+pub const ERROR_INVALID_USH_MONEY_MARKET_SC: &[u8] = b"invalid USH money market smart contract";
+pub const ERROR_INVALID_CONTROLLER_SC: &[u8] = b"invalid controller smart contract";
+pub const ERROR_NON_WHITELISTED_MARKET: &[u8] = b"not a whitelisted money market";
+pub const ERROR_DISCOUNT_DATA_ALREADY_SET: &[u8] = b"discount data already set";
+pub const ERROR_DISCOUNT_DATA_UNSET: &[u8] = b"discount data unset";
+pub const ERROR_INVALID_DISCOUNT: &[u8] = b"invalid discount";
+pub const ERROR_TOO_MANY_DISCOUNTS: &[u8] = b"too many discounts";
+pub const ERROR_ORACLE_FAILED_RETRIEVE_UNDERLYING_PRICE: &[u8] = b"oracle failed to retrieve the underlying price";
+pub const ERROR_MISSING_LAST_EXCHANGE_RATE: &[u8] = b"missing last exchange rate";

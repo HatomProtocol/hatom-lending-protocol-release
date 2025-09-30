@@ -1,0 +1,11 @@
+[package]
+name = "oracle-meta"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies.oracle]
+path = ".."
+
+[dependencies.multiversx-sc-meta-lib]
+version = "0.53.0"

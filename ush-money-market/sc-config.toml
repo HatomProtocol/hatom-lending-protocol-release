@@ -1,0 +1,2 @@
+[[proxy]]
+path = "src/ush_money_market_proxy.rs"

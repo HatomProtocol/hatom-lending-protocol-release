@@ -1,0 +1,48 @@
+[package]
+name = "hatom-protocol"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies.money-market]
+path = "money-market"
+
+[dependencies.controller]
+path = "controller"
+
+[dependencies.oracle]
+path = "oracle"
+
+[dependencies.interest-rate-model]
+path = "interest-rate-model"
+
+[dependencies.ush-money-market]
+path = "ush-money-market"
+
+[dependencies.discount-rate-model]
+path = "discount-rate-model"
+
+[dependencies]
+admin = { git = "ssh://git@github.com/HatomProtocol/hatom-admin-module", branch = "develop" }
+
+[dependencies.multiversx-sc]
+version = "0.53.0"
+
+[dev-dependencies]
+test-case = "*"
+num-bigint = "0.4.2"
+num-traits = "0.2"
+hex = "0.4"
+csv = "1.1"
+bigdecimal = "0.4.3"
+ush-minter = { git = "ssh://git@github.com/HatomProtocol/hatom-ush-minter", branch = "develop" }
+
+[dev-dependencies.multiversx-sc-scenario]
+version = "0.53.0"
+
+[dev-dependencies.serde]
+version = "1"
+features = ["derive"]
